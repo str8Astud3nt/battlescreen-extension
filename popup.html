@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Battlescreen Color Selector</title>
+	</head>
+	<script src="jquery-2.0.3.min.js"></script>
+	<script src="popup.js"></script>
+	<style>
+		body {
+			width: 175px;
+		}
+		.colorPanel {
+			overflow: hidden;
+		}
+		input[type="range"] {
+			float:right;
+		}
+		.bar {
+			clear: both;
+		}
+		.number {
+			width:	30px;
+		}
+		label {
+			float: left;
+			clear: both;
+		}
+		#update {
+			clear:both;
+			width:100%;
+		}
+	</style>
+	<body>
+		Squad
+		<div id="squad" class="colorPanel">
+			<div class="bar">
+				<input type="text" maxlength="3" class="redVal number"><input type="range" name="squadR" class="squadColor" min="0" max="255">
+			</div>
+			<div class="bar">
+				<input type="text" maxlength="3" class="greenVal number"><input type="range" name="squadG" class="squadColor" min="0" max="255">
+			</div>
+			<div class="bar">
+				<input type="text" maxlength="3" class="blueVal number"><input type="range" name="squadB" class="squadColor" min="0" max="255">
+			</div>
+		</div>
+		Team
+		<div id="team" class="colorPanel">
+			<div class="bar">
+				<input type="text" maxlength="3" class="redVal number"><input type="range" name="teamR" class="teamColor" min="0" max="255">
+			</div>
+			<div class="bar">
+				<input type="text" maxlength="3" class="greenVal number"><input type="range" name="teamG" class="teamColor" min="0" max="255">
+			</div>
+			<div class="bar">
+				<input type="text" maxlength="3" class="blueVal number"><input type="range" name="teamB" class="teamColor" min="0" max="255">
+			</div>
+		</div>
+		Enemy
+		<div id="enemy" class="colorPanel">
+			<div class="bar">
+				<input type="text" maxlength="3" class="redVal number"><input type="range" name="enemyR" class="enemyColor" min="0" max="255">
+			</div>
+			<div class="bar">
+				<input type="text" maxlength="3" class="greenVal number"><input type="range" name="enemyG" class="enemyColor" min="0" max="255">
+			</div>
+			<div class="bar">
+				<input type="text" maxlength="3" class="blueVal number"><input type="range" name="enemyB" class="enemyColor" min="0" max="255">
+			</div>
+		</div>
+		<label for="Default">Default (off)
+			<input type="radio" name="colorSetting" id="Default">
+		</label>
+		
+		<label for="DEUTERANOPIA">Deuteranopia
+			<input type="radio" name="colorSetting" id="DEUTERANOPIA">
+		</label>
+		
+		<label for="TRITANOPIA">Tritanopia
+			<input type="radio" name="colorSetting" id="TRITANOPIA">
+		</label>
+		
+		<label for="PROTANOPIA">Protanopia
+			<input type="radio" name="colorSetting" id="PROTANOPIA">
+		</label>
+		
+		<label for="Custom">Custom
+			<input type="radio" name="colorSetting" id="Custom">
+		</label>
+		
+		<button type="button" id="update">Update</button>
+	</body>
+</html>

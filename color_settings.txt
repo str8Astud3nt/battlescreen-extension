@@ -1,0 +1,42 @@
+OFF:
+observed (in-game):
+	112:179:48
+	46:156:212
+	207:99:43
+actual (default entered):
+	107:209:12
+	0:169:255
+	255:85:0
+
+DEUTERANOPIA:
+observed (in-game):
+	89:45:86
+	42:42:109
+	174:73:43
+actual (to enter):
+	69:0:65
+	0:0:100
+	198:45:0
+
+TRITANOPIA:
+observed (in-game):
+	44:48:164
+	40:105:204
+	148:55:45
+actual (to enter):
+	0:8:183
+	0:94:243
+	159:18:0
+
+PROTANOPIA:
+observed (in-game):
+	44:81:100
+	65:66:212
+	65:110:43
+actual (to enter):
+	0:57:86
+	33:33:255
+	33:101:0
+	
+	
+	
