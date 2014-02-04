@@ -1,3 +1,18 @@
+<!--
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                    Version 2, December 2004
+
+ Copyright (C) 2014 Bryan Martin
+
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.
+-->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,32 +21,44 @@
 	<script src="jquery-2.0.3.min.js"></script>
 	<script src="popup.js"></script>
 	<style>
+		* {
+			font-family: monospace;
+			font-weight: bold;
+		}
 		body {
 			width: 175px;
 		}
+		input[type="radio"] {
+			vertical-align: sub;
+			margin-left: 0px;
+		}
 		.colorPanel {
 			overflow: hidden;
+			box-shadow: 2px 2px 8px grey;
+			padding: 4px;
+			margin-bottom: 1em;
 		}
 		input[type="range"] {
-			float:right;
+			float: right;
 		}
 		.bar {
 			clear: both;
 		}
 		.number {
-			width:	30px;
+			width:	25px;
 		}
 		label {
 			float: left;
 			clear: both;
 		}
 		#update {
-			clear:both;
-			width:100%;
+			clear: both;
+			width: 100%;
+			margin-top: 1em;
 		}
 	</style>
 	<body>
-		Squad
+		Squad:
 		<div id="squad" class="colorPanel">
 			<div class="bar">
 				<input type="text" maxlength="3" class="redVal number"><input type="range" name="squadR" class="squadColor" min="0" max="255">
@@ -43,7 +70,7 @@
 				<input type="text" maxlength="3" class="blueVal number"><input type="range" name="squadB" class="squadColor" min="0" max="255">
 			</div>
 		</div>
-		Team
+		Team:
 		<div id="team" class="colorPanel">
 			<div class="bar">
 				<input type="text" maxlength="3" class="redVal number"><input type="range" name="teamR" class="teamColor" min="0" max="255">
@@ -55,7 +82,7 @@
 				<input type="text" maxlength="3" class="blueVal number"><input type="range" name="teamB" class="teamColor" min="0" max="255">
 			</div>
 		</div>
-		Enemy
+		Enemy:
 		<div id="enemy" class="colorPanel">
 			<div class="bar">
 				<input type="text" maxlength="3" class="redVal number"><input type="range" name="enemyR" class="enemyColor" min="0" max="255">
@@ -67,25 +94,16 @@
 				<input type="text" maxlength="3" class="blueVal number"><input type="range" name="enemyB" class="enemyColor" min="0" max="255">
 			</div>
 		</div>
-		<label for="Default">Default (off)
-			<input type="radio" name="colorSetting" id="Default">
-		</label>
 		
-		<label for="DEUTERANOPIA">Deuteranopia
-			<input type="radio" name="colorSetting" id="DEUTERANOPIA">
-		</label>
+		<label for="Default"><input type="radio" name="colorSetting" id="Default">Default (off)</label>
 		
-		<label for="TRITANOPIA">Tritanopia
-			<input type="radio" name="colorSetting" id="TRITANOPIA">
-		</label>
+		<label for="DEUTERANOPIA"><input type="radio" name="colorSetting" id="DEUTERANOPIA">Deuteranopia</label>
 		
-		<label for="PROTANOPIA">Protanopia
-			<input type="radio" name="colorSetting" id="PROTANOPIA">
-		</label>
+		<label for="TRITANOPIA"><input type="radio" name="colorSetting" id="TRITANOPIA">Tritanopia</label>
 		
-		<label for="Custom">Custom
-			<input type="radio" name="colorSetting" id="Custom">
-		</label>
+		<label for="PROTANOPIA"><input type="radio" name="colorSetting" id="PROTANOPIA">Protanopia</label>
+		
+		<label for="Custom"><input type="radio" name="colorSetting" id="Custom">Custom</label>
 		
 		<button type="button" id="update">Update</button>
 	</body>
